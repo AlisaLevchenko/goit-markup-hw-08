@@ -1,0 +1,20 @@
+.join {
+  margin-right: 93px;
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-color-white;
+    margin-bottom: 20px;
+    padding-top: 12px;
+  }
+}
+.soclist__link--footer {
+  background-color: #ffffff10;
+}
+
+.soclist__icon--footer {
+  fill: $text-color-white;
+}
