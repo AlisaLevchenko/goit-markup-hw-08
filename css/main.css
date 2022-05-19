@@ -208,12 +208,12 @@ img {
     display: flex;
     flex-direction: row;
   }
+  .contacts__list:first-child {
+    margin-right: 50px;
+  }
   .contacts__link {
     font-size: 14px;
     line-height: 1.14;
-  }
-  .contacts__list:first-child {
-    margin-right: 50px;
   }
 }
 
@@ -1016,7 +1016,7 @@ img {
   margin-bottom: 60px;
 }
 
-.address____list li:not(:last-child) {
+.address__list li:not(:last-child) {
   margin-bottom: 9px;
 }
 .address__address {
@@ -1292,11 +1292,18 @@ img {
 }
 @media screen and (max-width: 1199px) {
   .card__element {
-    max-width: 354px;
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 480px) {
+  .card__element {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
+  .card__element {
+    width: 354px;
+  }
   .card__element:nth-child(odd) {
     margin-right: 30px;
   }

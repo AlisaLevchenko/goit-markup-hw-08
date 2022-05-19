@@ -20,7 +20,7 @@
 }
 
 .address {
-  &____list li:not(:last-child) {
+  &__list li:not(:last-child) {
     margin-bottom: 9px;
   }
   &__address {

@@ -44,11 +44,21 @@
   
   @media screen and (max-width:1199px) {
     &__element {
-      max-width: 354px;
+      // width: 100%;
       margin-bottom: 30px;
     }
   }
+  @media screen and (min-width:480px) {
+    &__element {
+      width: 450px;
+    }
+  }
+
+
   @media screen and (min-width:768px) {
+    &__element {
+      width: 354px;
+    }
    
     &__element:nth-child(odd) {
       margin-right: 30px;
