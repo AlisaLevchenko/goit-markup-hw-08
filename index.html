@@ -25,7 +25,6 @@
           <!--Навигация на странице-->
           <nav class="navigation">
             <a class="navigation__logo" href="./index.html"><span>Web</span>Studio</a>
-
             <ul class="navigation__list">
               <li><a class="navigation__item navigation__item--active" href="./index.html">Студия</a></li>
               <li><a class="navigation__item" href="./portfolio.html">Портфолио</a></li>
@@ -38,14 +37,67 @@
             <li class="contacts__list">
               <a class="contacts__link" href="mailto:info@devstudio.com"
                 ><svg class="contacts__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>info@devstudio.com</a>
             </li>
             <li>
-              <a class="contacts__link" href="tel:380961111111"
-                ><svg class="contacts__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-Vector"></use></svg>+38 096 111 11 11</a>
+              <a class="contacts__link" href="tel:380961111111">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>+38 096 111 11 11</a>
             </li>
           </ul>
+          
+          <!--Мобильное меню-->
+
+          <button class="menu-btn" 
+            type="button" 
+            aria-label="кнопка отрытия меню" 
+            aria-expanded="false" 
+            data-menu-button>
+              <svg class="menu-btn-icon" width="40" height="40">
+                <use class="icon-open" href="./images/icons.svg#icon-menu"></use>
+                <use class="icon-close" href="./images/icons.svg#icon-close_menu"></use>
+              </svg>
+          </button>
+          <div class="mobile-menu" data-menu>
+            
+              <ul class="mobile-menu__nav">
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link mobile-menu__link--active" href="./index.html">Студия </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">Контакты</a>
+                </li>
+              </ul>
+
+              <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">info@devstudio.com</a>
+                </li>
+              </ul>
+
+              <ul class="mobile-menu__socials">
+                <li class="mobile-menu__social">
+                  <a href="" class="mobile-menu__link">Instagram </a>
+                </li>
+                <li class="mobile-menu__social">
+                  <a href="" class="mobile-menu__link">Twitter</a>
+                </li>
+                <li class="mobile-menu__social">
+                  <a href="" class="mobile-menu__link">Facebook</a>
+                </li>
+                <li class="mobile-menu__social">
+                  <a href="" class="mobile-menu__link">LinkedIn</a>
+                </li>
+              </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -61,7 +113,7 @@
             <div class="modal">
               <button data-modal-close class="close__button" type="button">
                 <svg class="close__svg" width="30" height="30">
-                  <use href="./images/close.svg#icon-close"></use>
+                  <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
 
@@ -249,10 +301,15 @@
           <ul class="team__list">
             <li class="team__card">
               <img
-                src="./images/slider1.jpg"
-                alt="Фото сотрудника"
-                width="270"
-                height="260"
+              srcset="./images/slider1-desk-min.jpg 270w, 
+              ./images/slider1-tab-min.jpg 354w, 
+              ./images/slider1-mob-min.jpg 450w, 
+              ./images/slider1-desk@2x-min.jpg 540w, 
+              ./images/slider1-tab@2x-min.jpg 708w, 
+              ./images/slider1-mob@2x-min.jpg 900w"
+              sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, (max-width:480px) 100%"
+              src="./images/slider1-mob-min.jpg"
+              alt="Фото сотрудника"
               />
               <div class="team__description">
                 <h3 class="team__member">Игорь Демьяненко</h3>
@@ -291,10 +348,15 @@
             </li>
             <li class="team__card">
               <img
-                src="./images/slider2.jpg"
-                alt="Фото сотрудника"
-                width="270"
-                height="260"
+              srcset="./images/slider2-desk-min.jpg 270w, 
+              ./images/slider2-tab-min.jpg 354w, 
+              ./images/slider2-mob-min.jpg 450w, 
+              ./images/slider2-desk@2x-min.jpg 540w, 
+              ./images/slider2-tab@2x-min.jpg 708w, 
+              ./images/slider2-mob@2x-min.jpg 900w"
+              sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, (max-width:480px) 100%"
+              src="./images/slider2-mob-min.jpg"
+              alt="Фото сотрудника"
               />
               <div class="team__description">
                 <h3 class="team__member">Ольга Репина</h3>
@@ -333,10 +395,15 @@
             </li>
             <li class="team__card">
               <img
-                src="./images/slider3.jpg"
-                alt="Фото сотрудника"
-                width="270"
-                height="260"
+              srcset="./images/slider3-desk-min.jpg 270w, 
+              ./images/slider3-tab-min.jpg 354w, 
+              ./images/slider3-mob-min.jpg 450w, 
+              ./images/slider3-desk@2x-min.jpg 540w, 
+              ./images/slider3-tab@2x-min.jpg 708w, 
+              ./images/slider3-mob@2x-min.jpg 900w"
+              sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, (max-width:480px) 100%"
+              src="./images/slider3-mob-min.jpg"
+              alt="Фото сотрудника"
               />
               <div class="team__description">
                 <h3 class="team__member">Николай Тарасов</h3>
@@ -375,10 +442,15 @@
             </li>
             <li class="team__card">
               <img
-                src="./images/slider4.jpg"
-                alt="Фото сотрудника"
-                width="270"
-                height="260"
+              srcset="./images/slider4-desk-min.jpg 270w, 
+              ./images/slider4-tab-min.jpg 354w, 
+              ./images/slider4-mob-min.jpg 450w, 
+              ./images/slider4-desk@2x-min.jpg 540w, 
+              ./images/slider4-tab@2x-min.jpg 708w, 
+              ./images/slider4-mob@2x-min.jpg 900w"
+              sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, (max-width:480px) 100%"
+              src="./images/slider4-mob-min.jpg"
+              alt="Фото сотрудника"
               />
               <div class="team__description">
                 <h3 class="team__member">Михаил Ермаков</h3>
@@ -425,42 +497,42 @@
         <div class="container">
           <h2 class="client__title">Постоянные клиенты</h2>
           <ul class="client__list">
-            <li>
+            <li class="client__item">
               <a class="client__link" href="">
                 <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-group"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="client__item">
               <a class="client__link" href=""
                 ><svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-group2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="client__item">
               <a class="client__link" href=""
                 ><svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-group3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="client__item">
               <a class="client__link" href=""
                 ><svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-group4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="client__item">
               <a class="client__link" href=""
                 ><svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-group5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="client__item">
               <a class="client__link" href=""
                 ><svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-group6"></use>
@@ -555,5 +627,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-modal-menu.js"></script>
   </body>
 </html>
