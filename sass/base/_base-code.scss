@@ -26,13 +26,9 @@ p {
 
 img {
   display: block;
+  object-fit: cover;
+   max-width: 100%;
 }
 .head-border {
   border-bottom: 1px solid #ececec;
-}
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  /* outline: 1px solid tomato; */
 }

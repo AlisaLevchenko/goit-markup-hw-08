@@ -7,12 +7,15 @@
     display: inline-block;
     margin-bottom: 20px;
     padding: 0;
+    margin-right: 0;
   }
   &__box {
     display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   &__address {
-    margin-right: 70px;
+    margin-bottom: 60px;
   }
 }
 
@@ -54,4 +57,29 @@
     color: $accent-color;
     outline: none;
   }
+}
+
+@media screen and (min-width:480px){
+   
+  }
+
+  @media screen and (min-width:768px){
+    .footer__box {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      }
+    
+  }
+@media screen and (min-width:1200px) {
+  .footer__box {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .footer__address {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+ 
 }

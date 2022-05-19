@@ -2,9 +2,19 @@
 
 @import './utils/visually-hidden';
 
+@import './utils/mixin';
+
 @import './base/base-code';
 
-@import './components/page-header';
+@import './base/container';
+
+@import './components/logo';
+
+@import './components/navigation';
+
+@import './components/contacts';
+
+@import './components/mob-btn';
 
 @import './components/hero';
 

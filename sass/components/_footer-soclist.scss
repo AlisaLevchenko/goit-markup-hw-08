@@ -1,14 +1,22 @@
 .join {
-  margin-right: 93px;
+  margin-bottom: 60px;
   &__text {
     font-weight: 700;
     font-size: 14px;
+    text-align: center;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $text-color-white;
     margin-bottom: 20px;
     padding-top: 12px;
+  }
+  
+  @media screen and (min-width:1200px) {
+    margin-right: 93px;
+    &__text {
+      text-align:left;
+    }
   }
 }
 .soclist__link--footer {

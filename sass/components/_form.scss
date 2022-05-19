@@ -1,6 +1,6 @@
 .form {
 /* outline: 1px solid tomato; */
-width: 448px;
+width: 100%;
 margin-left: auto;
 margin-right: auto;
   &__title {
@@ -109,13 +109,20 @@ margin-right: auto;
   &__button:focus {
     background-color: $hover-button-color;
   }
+  @media screen and (min-width:480px){
+    width: 370px;
+  }
+  @media screen and (min-width:1200px){
+    width: 448px;
+  }
+  
 }
 
 .agreement{
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 35px;
+  padding-left: 21px;
   margin-bottom: 30px;
   /* outline: 1px solid tomato; */
   &__input{
@@ -141,17 +148,17 @@ margin-right: auto;
   }
   &__icon--checknone {
     position: absolute;
-    top: 4px;
-    left: 9px;
+    top: 2px;
+    left: 0px;
   }
   &__icon--check{
     position: absolute;
-    top: 4px;
-    left: 9px;
+    top: 2px;
+    left: 0px;
     visibility: hidden;
   }
   &__text {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $text-color-secondary;
@@ -159,5 +166,20 @@ margin-right: auto;
   &__link {
     color: $accent-color;
     text-decoration: underline;
+  }
+  @media screen and (min-width:1200px){
+    padding-left: 35px;
+    &__text {
+      font-size: 14px;
+      line-height: 1.16;
+    }
+    &__icon--checknone{
+      top: 4px;
+      left: 9px;
+    }
+    &__icon--check{
+      top: 4px;
+      left: 9px;
+    }
   }
 }

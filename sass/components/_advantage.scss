@@ -1,15 +1,13 @@
 .advantage {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   &__list {
     display: flex;
+    flex-direction: column;
   }
   &__item {
-    width: 270px;
-    margin-right: 30px;
-  }
-  &__item:last-child {
-    margin-right: 0;
+    width: 100%;
+    margin-bottom: 30px;
   }
   &__icon--wrapper {
     width: 100%;
@@ -28,6 +26,7 @@
     letter-spacing: 0.03em;
     line-height: 1.14;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__description {
     color: $text-color-secondary;
@@ -35,7 +34,40 @@
     letter-spacing: 0.03em;
     line-height: 1.71;
   }
+  @media screen and (min-width:480px){
+    &__list{
+    margin: -15px;
+  }
+    &__item {
+      width: 450px;
+    margin: 15px
+    }
+    
+  }
+
+  @media screen and (min-width:768px){
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 354px;
+    }
+    &__points {
+      text-align: start;
+    }
+  }
+  @media screen and (min-width:1200px) {
+    padding: 94px 0;
+    &__item {
+      width: 270px;
+    }
+    &__points {
+      text-align: start;
+    }
+  }
 }
+
 
 .visually-hidden {
   position: absolute;
